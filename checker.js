@@ -1,5 +1,5 @@
 const fetch = (...args) => import('node-fetch').then(({default: fetch}) => fetch(...args));
-const mkdirp = require('mkdirp')
+const { mkdirp } = require('mkdirp')
 const ProxyAgent = require('proxy-agent');
 const fs = require('fs')
 const { performance } = require('perf_hooks')
